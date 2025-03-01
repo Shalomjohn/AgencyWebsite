@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "otuekongtech"
-  }
+    "default": "otuekongtech",
+    "chillsoftwares": "chillsoftwaresng"
+  },
+  "targets": {},
+  "etags": {}
 }
