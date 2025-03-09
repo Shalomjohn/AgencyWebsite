@@ -8,6 +8,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root {
+  --accentColor: #E5A100;
+}
 body {
   background: #fff;
   color: #666666;
@@ -15,12 +18,12 @@ body {
 }
 
 a {
-  color: #03C4EB;
+  color: var(--accentColor);
   transition: 0.5s;
 }
 
 a:hover, a:active, a:focus {
-  color: #03c5ec;
+  color: var(--accentColor);
   outline: none;
   text-decoration: none;
 }
@@ -76,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #03C4EB;
+  background: var(--accentColor);
   color: #fff;
 }
 
@@ -137,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero h2 span {
   color: #fff;
   transition: 0.3s;
-  border-bottom: 2px solid #03C4EB;
+  border-bottom: 2px solid var(--accentColor);
 }
 
 @media (max-width: 768px) {
@@ -169,8 +172,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+  background: var(--accentColor);
+    border: 2px solid var(--accentColor);
   color: #fff;
 }
 
@@ -186,8 +189,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-services:hover {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+  background: var(--accentColor);
+    border: 2px solid var(--accentColor);
 }
 
 /*--------------------------------------------------------------
@@ -258,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #03C4EB;
+  color: var(--accentColor);
 }
 
 .nav-menu .drop-down ul {
@@ -295,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #03C4EB;
+  color: var(--accentColor);
 }
 
 .nav-menu .drop-down > a:after {
@@ -390,7 +393,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #03C4EB;
+  color: var(--accentColor);
   text-decoration: none;
 }
 
@@ -463,10 +466,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
 }
 
+/* E8BD6D */
 .section-title-divider {
   width: 50px;
   height: 3px;
-  background: #03C4EB;
+  background: var(--accentColor);
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -529,11 +533,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #services .service-icon {
   float: left;
-  background: #03C4EB;
+  background: var(--accentColor);
   padding: 16px;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #03C4EB;
+  border: 1px solid var(--accentColor);
 }
 
 #services .service-icon i {
@@ -546,7 +550,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #services .service-item:hover .service-icon i {
-  color: #03C4EB;
+  color: var(--accentColor);
 }
 
 #services .service-title {
@@ -604,8 +608,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #subscribe .subscribe-btn:hover {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+  background: var(--accentColor);
+    border: 2px solid var(--accentColor);
 }
 
 /* Portfolio Section
@@ -635,7 +639,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-  color: #03C4EB;
+  color: var(--accentColor);
 }
 
 #portfolio #portfolio-flters li:last-child {
@@ -681,7 +685,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #portfolio .portfolio-item .portfolio-info .preview-link:hover, #portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #03C4EB;
+  color: var(--accentColor);
 }
 
 #portfolio .portfolio-item .portfolio-info .details-link {
@@ -740,7 +744,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #testimonials .profile h4 {
   font-weight: 700;
-  color: #03C4EB;
+  color: var(--accentColor);
   margin-bottom: 5px;
 }
 
@@ -815,7 +819,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #team .member .social a:hover {
-  color: #03C4EB;
+  color: var(--accentColor);
 }
 
 #team .member .social i {
@@ -836,7 +840,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #contact .info i {
   font-size: 32px;
-  color: #03C4EB;
+  color: var(--accentColor);
   float: left;
 }
 
@@ -901,11 +905,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #contact .php-email-form input::focus, #contact .php-email-form textarea::focus {
-  background-color: #03C4EB;
+  background-color: var(--accentColor);
 }
 
 #contact .php-email-form button[type="submit"] {
-  background: #03C4EB;
+  background: var(--accentColor);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1009,7 +1013,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #03C4EB !important;
+  background-color: var(--accentColor) !important;
 }
 
 .portfolio-details .portfolio-info {
